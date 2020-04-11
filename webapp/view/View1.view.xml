@@ -1,0 +1,66 @@
+<mvc:View controllerName="zmodel.zmodel.controller.View1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<VBox>
+						<Table mode="MultiSelect" selectionChange="selectAll" id="idEmployeTable" inset="false" items="{newModel>/employee}">
+							<headerToolbar>
+								<Toolbar>
+									<Title text="Emnployee Table" level="H2"/>
+								</Toolbar>
+							</headerToolbar>
+							<columns>
+								<Column>
+									<Text text="Employee ID"/>
+								</Column>
+								<Column>
+									<Text text="Employee Name"/>
+								</Column>
+							</columns>
+							<items>
+								<ColumnListItem type="Active" press="onObjectListItemPress">
+									<cells>
+										<!--<Text text="{q_model>NAME}"/>-->
+										<Input value="{newModel>ID}" type="{Text}" description="{UoM}" fieldWidth="{60%}" id="oID"/>
+										<!--<Text text="{q_model>LOCATION}"/>-->
+										<Input value="{newModel>NAME}" type="{Text}" description="{UoM}" fieldWidth="{60%}" id="oName"/>
+										<!--<Text text="{q_model>COMPANY}"/>-->
+									</cells>
+								</ColumnListItem>
+							</items>
+						</Table>
+						<Table mode="MultiSelect" selectionChange="selectAll" id="idDepartmentTable" inset="false" items="{newModel>/department}">
+							<headerToolbar>
+								<Toolbar>
+									<Title text="Emnployee Table" level="H2"/>
+								</Toolbar>
+							</headerToolbar>
+							<columns>
+								<Column>
+									<Text text="Department ID"/>
+								</Column>
+								<Column>
+									<Text text="Department Name"/>
+								</Column>
+							</columns>
+							<items>
+								<ColumnListItem type="Active" press="onObjectListItemPress">
+									<cells>
+										<!--<Text text="{q_model>NAME}"/>-->
+										<Input value="{newModel>ID}" type="{Text}" description="{UoM}" fieldWidth="{60%}" id="oID1"/>
+										<!--<Text text="{q_model>LOCATION}"/>-->
+										<Input value="{newModel>NAME}" type="{Text}" description="{UoM}" fieldWidth="{60%}" id="oName1"/>
+										<!--<Text text="{q_model>COMPANY}"/>-->
+									</cells>
+								</ColumnListItem>
+							</items>
+						</Table>
+						</VBox>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
