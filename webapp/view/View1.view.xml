@@ -5,6 +5,7 @@
 				<Page id="page" title="{i18n>title}">
 					<content>
 						<VBox>
+							<Button text="Press" press="onPress"/>
 						<Table mode="MultiSelect" selectionChange="selectAll" id="idEmployeTable" inset="false" items="{newModel>/employee}">
 							<headerToolbar>
 								<Toolbar>
