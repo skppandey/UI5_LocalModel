@@ -1,64 +1,91 @@
-<mvc:View controllerName="zmodel.zmodel.controller.View1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+<mvc:View controllerName="zmodel.zmodel.controller.View1" xmlns:h="zmodel.zmodel.custom" xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+	xmlns="sap.m">
 	<Shell id="shell">
 		<App id="app">
 			<pages>
 				<Page id="page" title="{i18n>title}">
 					<content>
 						<VBox>
-							<Button text="Press" press="onPress"/>
-						<Table mode="MultiSelect" selectionChange="selectAll" id="idEmployeTable" inset="false" items="{newModel>/employee}">
-							<headerToolbar>
-								<Toolbar>
-									<Title text="Emnployee Table" level="H2"/>
-								</Toolbar>
-							</headerToolbar>
-							<columns>
-								<Column>
-									<Text text="Employee ID"/>
-								</Column>
-								<Column>
-									<Text text="Employee Name"/>
-								</Column>
-							</columns>
-							<items>
-								<ColumnListItem type="Active" press="onObjectListItemPress">
-									<cells>
-										<!--<Text text="{q_model>NAME}"/>-->
-										<Input value="{newModel>ID}" type="{Text}" description="{UoM}" fieldWidth="{60%}" id="oID"/>
-										<!--<Text text="{q_model>LOCATION}"/>-->
-										<Input value="{newModel>NAME}" type="{Text}" description="{UoM}" fieldWidth="{60%}" id="oName"/>
-										<!--<Text text="{q_model>COMPANY}"/>-->
-									</cells>
-								</ColumnListItem>
-							</items>
-						</Table>
-						<Table mode="MultiSelect" selectionChange="selectAll" id="idDepartmentTable" inset="false" items="{newModel>/department}">
-							<headerToolbar>
-								<Toolbar>
-									<Title text="Emnployee Table" level="H2"/>
-								</Toolbar>
-							</headerToolbar>
-							<columns>
-								<Column>
-									<Text text="Department ID"/>
-								</Column>
-								<Column>
-									<Text text="Department Name"/>
-								</Column>
-							</columns>
-							<items>
-								<ColumnListItem type="Active" press="onObjectListItemPress">
-									<cells>
-										<!--<Text text="{q_model>NAME}"/>-->
-										<Input value="{newModel>ID}" type="{Text}" description="{UoM}" fieldWidth="{60%}" id="oID1"/>
-										<!--<Text text="{q_model>LOCATION}"/>-->
-										<Input value="{newModel>NAME}" type="{Text}" description="{UoM}" fieldWidth="{60%}" id="oName1"/>
-										<!--<Text text="{q_model>COMPANY}"/>-->
-									</cells>
-								</ColumnListItem>
-							</items>
-						</Table>
+							<Table mode="MultiSelect" selectionChange="selectAll" id="idEmployeTable" inset="false" items="{newModel>/employee}">
+								<headerToolbar>
+									<Toolbar>
+										<Title text="Emnployee Table" level="H2"/>
+									</Toolbar>
+								</headerToolbar>
+								<columns>
+									<Column>
+										<Text text="Employee ID"/>
+									</Column>
+									<Column>
+										<Text text="Employee Name"/>
+									</Column>
+								</columns>
+								<items>
+									<ColumnListItem type="Active" press="onObjectListItemPress">
+										<cells>
+											<!--<Text text="{q_model>NAME}"/>-->
+											<Input value="{newModel>ID}" type="{Text}" description="{UoM}" fieldWidth="{60%}" id="oID"/>
+											<!--<Text text="{q_model>LOCATION}"/>-->
+											<Input value="{newModel>NAME}" type="{Text}" description="{UoM}" fieldWidth="{60%}" id="oName"/>
+											<!--<Text text="{q_model>COMPANY}"/>-->
+										</cells>
+									</ColumnListItem>
+								</items>
+							</Table>
+							<Table mode="MultiSelect" selectionChange="selectAll" id="idDepartmentTable" inset="false" items="{newModel>/department}">
+								<headerToolbar>
+									<Toolbar>
+										<Title text="Emnployee Table" level="H2"/>
+									</Toolbar>
+								</headerToolbar>
+								<columns>
+									<Column>
+										<Text text="Department ID"/>
+									</Column>
+									<Column>
+										<Text text="Department Name"/>
+									</Column>
+								</columns>
+								<items>
+									<ColumnListItem type="Active" press="onObjectListItemPress">
+										<cells>
+											<!--<Text text="{q_model>NAME}"/>-->
+											<Input value="{newModel>ID}" type="{Text}" description="{UoM}" fieldWidth="{60%}" id="oID1"/>
+											<!--<Text text="{q_model>LOCATION}"/>-->
+											<Input value="{newModel>NAME}" type="{Text}" description="{UoM}" fieldWidth="{60%}" id="oName1"/>
+											<!--<Text text="{q_model>COMPANY}"/>-->
+										</cells>
+									</ColumnListItem>
+								</items>
+							</Table>
 						</VBox>
+						<HBox justifyContent="Center" class="sapUiSmallMarginTop">
+							<h:Button text="Custom Button" fuck="onPress" hover="fnhover"/>
+							<VBox class="sapUiMediumMarginBegin">
+								<Link text="5" press="onPressStatusLink" class="readyCircle"/>
+								<Text text="Ready to Book" class="sapUiSmallMarginBegin"/>
+							</VBox>
+							<VBox class="sapUiMediumMarginBegin">
+								<Link text="6" press="onPressStatusLink" class="pendingCircle"/>
+								<Text text="Pending Confirmation"/>
+							</VBox>
+							<VBox class="sapUiSmallMarginBegin">
+								<Link text="7" press="onPressStatusLink" class="confirmCircle"/>
+								<Text text="Confirmed Bookings"/>
+							</VBox>
+							<VBox class="sapUiSmallMarginBegin">
+								<Link text="8" press="onPressStatusLink" class="alertCircle"/>
+								<Text text="Booking Alert" class="sapUiSmallMarginBegin"/>
+							</VBox>
+							<VBox class="sapUiMediumMarginBegin">
+								<Link text="9" press="onPressStatusLink" class="completedCircle"/>
+								<Text text="Completed Booking"/>
+							</VBox>
+							<VBox class="sapUiMediumMarginBegin">
+								<Button type="Transparent" text="10" press="onPre" class="ButtonStyle"/>
+								<Text text="Completed Booking"/>
+							</VBox>
+						</HBox>
 					</content>
 				</Page>
 			</pages>

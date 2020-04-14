@@ -1,1 +1,91 @@
 /* Enter your custom styles here */
+/* Enter your custom styles here */
+.readyCircle {
+	background: #b3cccc;
+    border: 10px solid #5c8a8a;
+    text-decoration: none;
+    font-size: 32px;
+    display: block;
+    text-align: center;
+    height: 58px;
+    width: 80px;
+    /*border-radius: 50%;*/
+    padding-top: 22px;
+}
+
+.pendingCircle {
+	background: #ffff66;
+    border: 10px solid #e6e600;
+    text-decoration: none;
+    font-size: 32px;
+    display: block;
+    text-align: center;
+    height: 58px;
+    width: 80px;
+    border-radius: 50%;
+    padding-top: 22px;
+}
+
+.confirmCircle {
+	background: #75e572;
+    border: 10px solid #CFC;
+    text-decoration: none;
+    font-size: 32px;
+    display: block;
+    text-align: center;
+    height: 58px;
+    width: 80px;
+    border-radius: 50%;
+    padding-top: 22px;
+}
+
+.alertCircle {
+	background: #ff6666;
+    border: 10px solid #cc0000;
+    text-decoration: none;
+    font-size: 32px;
+    display: block;
+    text-align: center;
+    height: 58px;
+    width: 80px;
+    border-radius: 50%;
+    padding-top: 22px;
+}
+
+.completedCircle {
+	background: #4dd2ff;
+    border: 10px solid #0099cc;
+    text-decoration: none;
+    font-size: 32px;
+    display: block;
+    text-align: center;
+    height: 58px;
+    width: 80px;
+    border-radius: 50%;
+    padding-top: 22px;
+}
+.ButtonStyle {
+	background: #4dd2ff;
+    border: 10px solid #0099cc;
+    text-decoration: none;
+    font-size: 32px;
+    /*display: block;*/
+    text-align: center;
+    height: 80px;
+    width: 80px;
+    display: inline-block;
+    opacity: .6;
+    /*border-radius: 50%;*/
+    /*padding: 22px;*/
+}
+.ButtonStyle:hover {
+	background-color: #3e8e41;
+	opacity: 1;
+}
+
+.ButtonStyle:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+

@@ -17,6 +17,7 @@ sap.ui.define([
 			var b = 5;
 			var c = 10;
 			var a = this.randomCalculations(c,b);
+			sap.m.MessageToast.show("Button is pressed");
 		}
 	});
 });
