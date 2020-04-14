@@ -1,7 +1,10 @@
 /* Enter your custom styles here */
+
+
 /* Enter your custom styles here */
+
 .readyCircle {
-	background: #b3cccc;
+    background: #b3cccc;
     border: 10px solid #5c8a8a;
     text-decoration: none;
     font-size: 32px;
@@ -14,7 +17,7 @@
 }
 
 .pendingCircle {
-	background: #ffff66;
+    background: #ffff66;
     border: 10px solid #e6e600;
     text-decoration: none;
     font-size: 32px;
@@ -27,7 +30,7 @@
 }
 
 .confirmCircle {
-	background: #75e572;
+    background: #75e572;
     border: 10px solid #CFC;
     text-decoration: none;
     font-size: 32px;
@@ -40,7 +43,7 @@
 }
 
 .alertCircle {
-	background: #ff6666;
+    background: #ff6666;
     border: 10px solid #cc0000;
     text-decoration: none;
     font-size: 32px;
@@ -53,7 +56,7 @@
 }
 
 .completedCircle {
-	background: #4dd2ff;
+    background: #4dd2ff;
     border: 10px solid #0099cc;
     text-decoration: none;
     font-size: 32px;
@@ -64,28 +67,40 @@
     border-radius: 50%;
     padding-top: 22px;
 }
+
 .ButtonStyle {
-	background: #4dd2ff;
+    background: #4dd2ff;
     border: 10px solid #0099cc;
-    text-decoration: none;
-    font-size: 32px;
-    /*display: block;*/
+    text-decoration: bold;
+    font-size: 42px;
     text-align: center;
     height: 80px;
     width: 80px;
-    display: inline-block;
+    /*display: inline-block;*/
     opacity: .6;
-    /*border-radius: 50%;*/
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    transition: .2s;
     /*padding: 22px;*/
 }
+
 .ButtonStyle:hover {
-	background-color: #3e8e41;
-	opacity: 1;
+    background-color: #3e8e41;
+    opacity: 1;
+    padding: 50px;
 }
 
 .ButtonStyle:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
 }
 
+#__button0-inner {
+    display: contents !important;
+    /*color: #ff6666 ;*/
+}
+
+#__button0-content {
+    overflow: visible !important;
+}

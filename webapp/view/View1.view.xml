@@ -82,7 +82,7 @@
 								<Text text="Completed Booking"/>
 							</VBox>
 							<VBox class="sapUiMediumMarginBegin">
-								<Button type="Transparent" text="10" press="onPre" class="ButtonStyle"/>
+								<Button text="10" press="onPre" class="ButtonStyle" />
 								<Text text="Completed Booking"/>
 							</VBox>
 						</HBox>
