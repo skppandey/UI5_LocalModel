@@ -4,77 +4,77 @@ sap.ui.define("zmodel.zmodel/custom/Button", [
 ], function (Control) {
 	"use strict";
 	return Control.extend("zmodel.zmodel.controller.View1", {
-			metadata: {
-				properties: {
-					"width": {
-						type: "sap.ui.core.CSSSize",
-						defaultValue: "100px"
-					},
-					"height": {
-						type: "sap.ui.core.CSSSize",
-						defaultValue: "100px"
-					},
-					"border-radius": {
-						type: "sap.ui.core.CSSSize",
-						defaultValue: "50%"
-					},
-					"border": {
-						type: "sap.ui.core.CSSSize",
-						defaultValue: "10px solid #5c9a1a"
-					},
-					"cursor": {
-						type: "sap.ui.core.CSSSize",
-						defaultValue: "pointer"
-					},
-					"background-color": {
-						defaultValue: "#4CAF50"
-					},
-					"opacity": {
-						defaultValue: ".6"
-					},
-					"transition": {
-						defaultValue: ".3s"
-					},
-					"box-shadow": {
-						defaultValue: "0 9px #999"
-					},
-					"text": {
-						type: "string"
-					}
+		metadata: {
+			properties: {
+				"width": {
+					type: "sap.ui.core.CSSSize",
+					defaultValue: "100px"
 				},
-				aggregations: {},
-				events: {
-					"hover": {},
-					"fuck": {},
-					"press": {}
+				"height": {
+					type: "sap.ui.core.CSSSize",
+					defaultValue: "100px"
+				},
+				"border-radius": {
+					type: "sap.ui.core.CSSSize",
+					defaultValue: "50%"
+				},
+				"border": {
+					type: "sap.ui.core.CSSSize",
+					defaultValue: "10px solid #5c9a1a"
+				},
+				"cursor": {
+					type: "sap.ui.core.CSSSize",
+					defaultValue: "pointer"
+				},
+				"background-color": {
+					defaultValue: "#4CAF50"
+				},
+				"opacity": {
+					defaultValue: ".6"
+				},
+				"transition": {
+					defaultValue: ".3s"
+				},
+				"box-shadow": {
+					defaultValue: "0 9px #999"
+				},
+				"text": {
+					type: "string"
 				}
 			},
-			onmouseover: function (evt) {
-				// evt.toElement.style.opacity = "1"
-				this.setOpacity("1");
-				this.fireHover(evt);
-			},
-			onmousemove: function (evt) {
-				// evt.toElement.style.opacity = "1"
-				this.setOpacity("1");
-			},
-			onclick: function (evt) {
-				// this.firePress(evt);
+			aggregations: {},
+			events: {
+				"hover": {},
+				"fuck": {},
+				"press": {}
+			}
+		},
+		onmouseover: function (evt) {
+			// evt.toElement.style.opacity = "1"
+			this.setOpacity("1");
+			this.fireHover(evt);
+		},
+		onmousemove: function (evt) {
+			// evt.toElement.style.opacity = "1"
+			this.setOpacity("1");
+		},
+		onclick: function (evt) {
+			// this.firePress(evt);
 			this.fireFuck(evt);
 		},
 		onmouseout: function (evt) {
 			// evt.toElement.style.opacity = "1"
 			this.setOpacity(".6");
 		},
-		onmousedown:function(evt){
-				evt.toElement.style.backgroundColor = "#ffff66";
-				evt.toElement.style.boxShadow = "0 5px #666";
-				evt.toElement.style.transform = "translateY(4px)";
+		onmousedown: function (evt) {
+			evt.toElement.style.backgroundColor = "#ffff66";
+			evt.toElement.style.boxShadow = "0 5px #666";
+			evt.toElement.style.transform = "translateY(4px)";
 		},
-				onmouseup:function(evt){
-				evt.toElement.style.backgroundColor = "#3e8e41";
-				evt.toElement.style.boxShadow = "0 9px #999";
-				evt.toElement.style.transform = "";
+		onmouseup: function (evt) {
+			evt.toElement.style.backgroundColor = "#3e8e41";
+			evt.toElement.style.boxShadow = "0 9px #999";
+			evt.toElement.style.transform = "";
 		},
 		// onAfterRendering: function (evt) {
 		// 	if (evt == "hover") {
